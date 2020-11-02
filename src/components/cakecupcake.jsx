@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import SingleElement from './singleElement';
 
-function CakeCupCake(){
+import styles from '../styles/mystyle.module.css';
 
-    const [count, setCount] = useState(0);
-
-    return(){
-        <div>
-        <h1> {count}</h1>
-        
-        
-        </div>
-
-
-    }
+function CakeCupCake() {
+  return (
+    <div>
+      <h1 className={styles.bigBlue}>CupCakes</h1>
+      <SingleElement />
+    </div>
+  );
 }
 
 export default CakeCupCake;
